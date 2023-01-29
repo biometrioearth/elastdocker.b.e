@@ -9,3 +9,16 @@
 #  queue.type: persisted
 #  pipeline.batch.size: 125
 #  queue.page_capacity: 50mb
+
+###########################
+#
+# Biometro.earth configurations
+#
+###########################
+# This is the first pipeline to test psql connection.
+
+- pipeline.id: snmb
+  path.config: "/usr/share/logstash/pipeline/snmb.conf"
+
+- pipeline.id: conglomerado_muestra_coords
+  path.config: "/usr/share/logstash/pipeline/conglomerado_muestra_coords.conf"

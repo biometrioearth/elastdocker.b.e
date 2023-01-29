@@ -20,5 +20,5 @@
 - pipeline.id: tochtli
   path.config: "/usr/share/logstash/pipeline/tochtli.conf"
 
-- pipeline.id: conglomerado_muestra_coords
-  path.config: "/usr/share/logstash/pipeline/conglomerado_muestra_coords.conf"
+#- pipeline.id: conglomerado_muestra_coords
+#  path.config: "/usr/share/logstash/pipeline/conglomerado_muestra_coords.conf"

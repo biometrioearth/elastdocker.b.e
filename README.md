@@ -90,14 +90,6 @@ $ make prune
 * Kibana Configuration in `kibana.yml` at `./kibana/config`.
 * Rubban Configuration using Docker-Compose passed Environment Variables.
 
-### Logtash b.e. sample files
-
-We can use the next files as a guide to configure our Logs.
-
-```shell
-$ rsync -avz .... /
-```
-
 
 ### Setting Up Keystore
 

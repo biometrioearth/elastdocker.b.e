@@ -4,15 +4,6 @@
   path.config: "/usr/share/logstash/pipeline/main.conf"
   queue.type: memory
 
-- pipeline.id: bed_occurrences_pipeline
-  path.config: "/usr/share/logstash/pipeline/bed_occurrences.conf"
-  queue.type: memory
-
-- pipeline.id: bed_taxa_pipeline
-  path.config: "/usr/share/logstash/pipeline/bed_taxa.conf"
-  queue.type: memory
-
-
 #- pipeline.id: second_pipeline
 #  path.config: "/usr/share/logstash/pipeline/second.conf"
 #  queue.type: persisted
@@ -24,10 +15,22 @@
 # Biometro.earth configurations
 #
 ###########################
-# This is tochtli pipeline with psql connection.
+
+
+#############################################
+# Tochtli pipeline to count and receive all data from all projects.
 
 - pipeline.id: tochtli
   path.config: "/usr/share/logstash/pipeline/tochtli.conf"
 
-#- pipeline.id: conglomerado_muestra_coords
-#  path.config: "/usr/share/logstash/pipeline/conglomerado_muestra_coords.conf"
+
+##############################
+# Taxa Pipelines for Zambia Project
+
+- pipeline.id: bed_occurrences_pipeline
+  path.config: "/usr/share/logstash/pipeline/bed_occurrences.conf"
+  queue.type: memory
+
+- pipeline.id: bed_taxa_pipeline
+  path.config: "/usr/share/logstash/pipeline/bed_taxa.conf"
+  queue.type: memory
